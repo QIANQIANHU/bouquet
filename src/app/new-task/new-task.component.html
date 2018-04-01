@@ -1,0 +1,14 @@
+<h3>New flowers</h3>
+<div>
+ <label>Enter flowers name:</label>
+ <input #newDescription>
+</div>
+<div>
+  <label>Flower Number:</label>
+  <select #newPriority>
+    <option [value]="1"> add 1 </option>
+    <option [value]="2"> add 2</option>
+    <option [value]="3"> add 3 </option>
+  </select>
+  <button (click)="submitForm(newDescription.value, newPriority.value); newDescription.value='';">Add</button>
+</div>
